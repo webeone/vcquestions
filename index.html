@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Pre-Screen Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Startup Pre-Screen Widget</h1>
+    <p>Select a topic to display questions:</p>
+    <select id="topicSelect" onchange="displayQuestions()">
+        <option value="">--Select a topic--</option>
+        <option value="fundraising">Fundraising</option>
+        <option value="history">History</option>
+        <option value="exit">Exit</option>
+        <option value="founders">Founders</option>
+        <option value="cap-table">Cap Table</option>
+        <!-- Add more options for other topics -->
+    </select>
+    <div id="questionContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
